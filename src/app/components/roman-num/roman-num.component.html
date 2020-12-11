@@ -1,0 +1,13 @@
+<div class="login-form-flex">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Número Arábigo</mat-label>
+      <input type="number" [(ngModel)]='arabicNumber' matInput placeholder="Ej. 150" value="0" [ngModelOptions]="{standalone: true}"/>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Resultado</mat-label>
+      <textarea matInput placeholder="Aquí es mostrado el resultado">{{ romanNumber }}</textarea>
+    </mat-form-field>
+    <button mat-stroked-button (click)="calculateRomanNumeral()" color="primary">Calcular</button>
+  </form>
+</div>
