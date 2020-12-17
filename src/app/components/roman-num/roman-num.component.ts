@@ -8,7 +8,7 @@ import { RomanNumService } from 'src/app/services/roman-num.service';
 })
 export class RomanNumComponent implements OnInit {
 
-  arabicNumber: number = 0;
+  arabicNumber: number = 1;
   romanNumber: string= '';
   
   constructor(private romanNum: RomanNumService) { }

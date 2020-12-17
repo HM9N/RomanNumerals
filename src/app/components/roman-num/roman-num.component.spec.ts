@@ -23,8 +23,16 @@ describe('RomanNumComponent', () => {
     expect(component).toBeTruthy();
   });;
 
-  it('debe ser menor o igual que 1000', () => {
+  it('El número arábigo debe ser menor o igual que 1000', () => {
     expect(component.arabicNumber).toBeLessThanOrEqual(1000);
+  });
+
+  it('El número arábigo debe ser mayor o igual que 1', () => {
+    expect(component.arabicNumber).toBeGreaterThanOrEqual(1);
+  });
+
+  it('La entrada debe ser numérica', () => {
+    expect(component.arabicNumber).toBeInstanceOf(Number);
   });
 
 
