@@ -15,7 +15,7 @@ describe('RomanNumService', () => {
   });
 
   //comprueba que concuerde con la expresión regular. La expresión regular valida si es
-  //un número romano ( que no repita simbolo más de veces o que el símbolo I solo pueda restar a V y a X.) 
+  //un número romano ( que no repita simbolo más de veces o que el símbolo I solo pueda restar a V y a X, entre otras reglas) 
   it('Debe respetar las reglas para formar números romanos ', () => {
     expect(service.result).toMatch(/^(?:M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})|\d+)$/);
   });
